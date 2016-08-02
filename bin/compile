@@ -15,7 +15,7 @@ RELEASES_URL="https://releases.hashicop.com/consul"
 
 DOWNLOAD_URL="$RELEASES_URL/$CONSUL_VERSION/$CONSUL_FILE"
 
-echo "-----> Downloading Consul Agent $CONSUL_VERSION"
+echo "-----> Downloading Consul Agent $CONSUL_VERSION ($DOWNLOAD_URL)"
 
 curl -L -s $DOWNLOAD_URL > $BUILD_DIR/bin/$CONSUL_FILE
 cd $BUILD_DIR/bin && unzip $CONSUL_FILE && rm $CONSUL_FILE
