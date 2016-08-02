@@ -10,7 +10,7 @@ indent() {
 
 CONSUL_VERSION="0.6.4"
 CONSUL_ARCH="linux_amd64"
-CONSUL_FILE="consul_$CONSUL_VERSION\_$CONSUL_ARCH.zip"
+CONSUL_FILE="consul_${CONSUL_VERSION}_${CONSUL_ARCH}.zip"
 RELEASES_URL="https://releases.hashicorp.com/consul"
 
 DOWNLOAD_URL="$RELEASES_URL/$CONSUL_VERSION/$CONSUL_FILE"
