@@ -1,0 +1,8 @@
+#!/bin/sh
+
+
+cat << EOF
+---
+default_process_types:
+  consul: bin/consul agent -data-dir /tmp/consul -join=$CONSUL_SERVER
+EOF
